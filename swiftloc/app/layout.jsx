@@ -1,6 +1,7 @@
 import { Anton } from "next/font/google";
 import "./globals.css";
 import Navbar from './components/ui/Navbar';
+import Footer from './components/ui/Footer';
 
 const anton = Anton ({
   weight: ['400'],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

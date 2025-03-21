@@ -5,3 +5,13 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.container {
+  max-width: 1400px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.fleet--clip {
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+}

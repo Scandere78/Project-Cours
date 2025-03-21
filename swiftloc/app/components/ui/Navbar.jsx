@@ -7,22 +7,22 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black text-white fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 mx-auto">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="font-anton text-red-400 text-2xl">
               SwiftLoc
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/" className="text-white hover:text-red-400 px-3 py-2 rounded-md font-medium">
                 Accueil
               </Link>
-              <Link href="/vehicules" className="text-white hover:text-red-400 px-3 py-2 rounded-md font-medium">
+              <Link href="/bolide" className="text-white hover:text-red-400 px-3 py-2 rounded-md font-medium">
                 Véhicules
               </Link>
               <Link href="/tarifs" className="text-white hover:text-red-400 px-3 py-2 rounded-md font-medium">
@@ -33,14 +33,16 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          
+
           {/* Login/Register Button */}
           <div className="hidden md:block">
-            <button className="bg-red-400 text-white px-4 py-2 rounded-md hover:bg-red-500 transition-colors">
-              Connexion
-            </button>
+            <Link href="/connexion">
+              <button className="bg-red-400 text-white px-4 py-2 rounded-md hover:bg-red-500 transition-colors">
+                Connexion
+              </button>
+            </Link>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -72,7 +74,7 @@ const Navbar = () => {
             <Link href="/" className="text-white hover:text-red-400 block px-3 py-2 rounded-md text-base font-medium">
               Accueil
             </Link>
-            <Link href="/vehicules" className="text-white hover:text-red-400 block px-3 py-2 rounded-md text-base font-medium">
+            <Link href="/bolide" className="text-white hover:text-red-400 block px-3 py-2 rounded-md text-base font-medium">
               Véhicules
             </Link>
             <Link href="/tarifs" className="text-white hover:text-red-400 block px-3 py-2 rounded-md text-base font-medium">
@@ -81,9 +83,11 @@ const Navbar = () => {
             <Link href="/contact" className="text-white hover:text-red-400 block px-3 py-2 rounded-md text-base font-medium">
               Contact
             </Link>
-            <button className="bg-red-400 text-white mt-3 w-full px-4 py-2 rounded-md hover:bg-red-500 transition-colors">
-              Connexion
-            </button>
+            <Link href="/connexion">
+              <button className="bg-red-400 text-white mt-3 w-full px-4 py-2 rounded-md hover:bg-red-500 transition-colors">
+                Connexion
+              </button>
+            </Link>
           </div>
         </div>
       )}

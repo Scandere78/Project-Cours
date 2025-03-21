@@ -8,6 +8,7 @@ module.exports = {
       extend: {
         fontFamily: {
           'anton': ['Anton', 'sans-serif'],
+          'montserrat': ["Montserrat", "sans-serif"],
         },
       },
     },
